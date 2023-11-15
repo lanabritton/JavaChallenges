@@ -1,0 +1,19 @@
+public class Swapnumbers {
+    public static void main(String[] args) {
+        int[] numbers = { 5, 20 };
+        swapNumberswithtemp(numbers);
+        System.out.printf("%d %d", numbers[0], numbers[1]);
+    }
+
+    public static void swapNumberswithtemp(int[] arr) {
+        int temp = arr[0];
+        arr[0] = arr[1];
+        arr[1] = temp;
+    }
+
+    public static void swapNumberswithouttemp(int[] arr) {
+        arr[0] = arr[0] + arr[1];
+        arr[1] = arr[0] - arr[1];
+        arr[0] = arr[0] - arr[1];
+    }
+}
